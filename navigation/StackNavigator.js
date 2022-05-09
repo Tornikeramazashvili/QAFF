@@ -13,6 +13,7 @@ const StackNavigator = () => {
           name="Home"
           component={MainContainer}
           options={{ headerShown: false }}
+
         />
       </Stack.Navigator>
     </NavigationContainer>

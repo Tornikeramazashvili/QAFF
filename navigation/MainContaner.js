@@ -29,7 +29,7 @@ export default function MainContainer() {
         style: {
           position: "absolute",
           height: "10%",
-          marginBottom: "4%",
+          marginBottom: "1%",
           paddingHorizontal: 10,
           borderTopWidth: 0,
           elevation: 0,
@@ -60,7 +60,14 @@ export default function MainContainer() {
         },
       })}
     >
-      <Tab.Screen name={categoriesName} component={CategoriesScreen} />
+      <Tab.Screen name={categoriesName} component={CategoriesScreen}
+      // listeners={({ navigation }) => ({
+      //   tabPress: event => {
+      //     event.preventDefault();
+      //     navigation.navigate("Name of screen from stack screen")
+      //   }
+      // })}
+       />
       <Tab.Screen name={carName} component={CarScreen} />
       <Tab.Screen name={dropName} component={DropScreen} />
       <Tab.Screen name={listenName} component={ListenScreen} />
